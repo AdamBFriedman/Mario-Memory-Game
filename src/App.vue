@@ -101,6 +101,18 @@ let match = function match() {
   });
 };
 
+let resetGuesses = function resetGuesses() {
+  firstGuess = "";
+  secondGuess = "";
+  count = 0;
+  previousTarget = null;
+
+  let selected = document.querySelectorAll(".selected");
+  selected.forEach(function (card) {
+    card.classList.remove("selected");
+  });
+};
+
 export default {
   name: "App",
   components: {
