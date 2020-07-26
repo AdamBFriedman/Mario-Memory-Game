@@ -5,7 +5,7 @@
 }
 
 body {
-	margin: 20px 0;
+	margin: 50px auto;
 	background: black;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .back {
 	transform: rotateY(180deg);
-	background-color: peachpuff;
+	background-color: transparent;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -55,5 +55,5 @@ body {
 }
 
 .match .front {
-	background: peachpuff !important;
+	background: url('../img/coin.png') no-repeat center center / contain !important;
 }
