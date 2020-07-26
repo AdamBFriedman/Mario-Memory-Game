@@ -59,20 +59,40 @@ let cardsArray = [
   },
 ];
 
-var gameGrid = cardsArray.concat(cardsArray).sort(function () {
+let gameGrid = cardsArray.concat(cardsArray).sort(function () {
   return 0.5 - Math.random();
 });
 
-var firstGuess = "";
-var secondGuess = "";
-var count = 0;
-var previousTarget = null;
-var delay = 1200;
+let firstGuess = "";
+let secondGuess = "";
+let count = 0;
+let previousTarget = null;
+let delay = 1200;
 
-var game = document.getElementById("game");
-var grid = document.createElement("section");
+let game = document.getElementById("game");
+let grid = document.createElement("section");
 grid.setAttribute("class", "grid");
 game.appendChild(grid);
+
+gameGrid.forEach(function (item) {
+  let name = item.name,
+    img = item.img;
+
+  let card = document.createElement("div");
+  card.classList.add("card");
+  card.dataset.name = name;
+
+  let front = document.createElement("div");
+  front.classList.add("front");
+
+  let back = document.createElement("div");
+  back.classList.add("back");
+  back.style.backgroundImage = "url(" + img + ")";
+
+  grid.appendChild(card);
+  card.appendChild(front);
+  card.appendChild(back);
+});
 
 export default {
   name: "App",
