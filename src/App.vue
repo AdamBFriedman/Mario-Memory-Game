@@ -59,7 +59,21 @@ let cardsArray = [
   },
 ];
 
-console.log(cardsArray);
+var gameGrid = cardsArray.concat(cardsArray).sort(function () {
+  return 0.5 - Math.random();
+});
+
+var firstGuess = "";
+var secondGuess = "";
+var count = 0;
+var previousTarget = null;
+var delay = 1200;
+
+var game = document.getElementById("game");
+var grid = document.createElement("section");
+grid.setAttribute("class", "grid");
+game.appendChild(grid);
+
 export default {
   name: "App",
   components: {
