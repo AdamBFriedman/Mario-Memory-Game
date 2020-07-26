@@ -94,6 +94,13 @@ gameGrid.forEach(function (item) {
   card.appendChild(back);
 });
 
+let match = function match() {
+  let selected = document.querySelectorAll(".selected");
+  selected.forEach(function (card) {
+    card.classList.add("match");
+  });
+};
+
 export default {
   name: "App",
   components: {
