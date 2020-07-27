@@ -1,31 +1,31 @@
 const cardsArray = [
 	{
-		name: 'shell',
-		img: 'img/blueshell.png',
+		name: 'kamek',
+		img: 'img/kamek.png',
 	},
 	{
-		name: 'star',
-		img: 'img/star.png',
+		name: 'boo',
+		img: 'img/boo.png',
 	},
 	{
 		name: 'bobomb',
 		img: 'img/bobomb.png',
 	},
 	{
-		name: 'mario',
-		img: 'img/mario.png',
+		name: 'birdo',
+		img: 'img/birdo.png',
 	},
 	{
-		name: 'luigi',
-		img: 'img/luigi.png',
+		name: 'cheepcheep',
+		img: 'img/cheepcheep.png',
 	},
 	{
-		name: 'peach',
-		img: 'img/peach.png',
+		name: 'koopa',
+		img: 'img/koopa.png',
 	},
 	{
-		name: '1up',
-		img: 'img/1up.png',
+		name: 'shyguy',
+		img: 'img/shyguy.png',
 	},
 	{
 		name: 'mushroom',
@@ -40,8 +40,8 @@ const cardsArray = [
 		img: 'img/bulletbill.png',
 	},
 	{
-		name: 'coin',
-		img: 'img/coin.png',
+		name: 'lakitu',
+		img: 'img/lakitu.png',
 	},
 	{
 		name: 'goomba',

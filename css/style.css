@@ -44,7 +44,7 @@ body {
 
 .back {
 	transform: rotateY(180deg);
-	background-color: transparent;
+	background-color: transparent !important;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -55,5 +55,5 @@ body {
 }
 
 .match .front {
-	background: url('../img/coin.png') no-repeat center center / contain !important;
+	background: url('../img/1up.png') no-repeat center center / contain !important;
 }
