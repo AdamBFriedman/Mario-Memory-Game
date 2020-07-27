@@ -94,7 +94,7 @@ const resetGuesses = () => {
 	count = 0;
 	previousTarget = null;
 
-	var selected = document.querySelectorAll('.selected');
+	let selected = document.querySelectorAll('.selected');
 	selected.forEach((card) => {
 		card.classList.remove('selected');
 	});
@@ -116,11 +116,9 @@ grid.addEventListener('click', (event) => {
 		count++;
 		if (count === 1) {
 			firstGuess = clicked.parentNode.dataset.name;
-			console.log(firstGuess);
 			clicked.parentNode.classList.add('selected');
 		} else {
 			secondGuess = clicked.parentNode.dataset.name;
-			console.log(secondGuess);
 			clicked.parentNode.classList.add('selected');
 		}
 
@@ -133,3 +131,7 @@ grid.addEventListener('click', (event) => {
 		previousTarget = clicked;
 	}
 });
+
+// window.addEventListener('load', () => {
+// 	document.getElementById('player').play();
+// });
