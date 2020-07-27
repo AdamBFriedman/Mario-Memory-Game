@@ -131,7 +131,3 @@ grid.addEventListener('click', (event) => {
 		previousTarget = clicked;
 	}
 });
-
-// window.addEventListener('load', () => {
-// 	document.getElementById('player').play();
-// });
